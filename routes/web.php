@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('master.layout');
+    return view('home');
 });
 
 Route::get('/arsip', function () {
