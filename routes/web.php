@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/arsip', function () {
     return view('arsip');
 });
+
+Route::get('listarsip', function (){
+    return view('listarsip');
+});

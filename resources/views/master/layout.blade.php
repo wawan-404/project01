@@ -74,7 +74,7 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Arsip Digital <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">List Arsip</a></li>
+                      <li><a href="/listarsip">List Arsip</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Menu Baru <span class="fa fa-chevron-down"></span></a>
