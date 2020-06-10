@@ -70,7 +70,7 @@
                 <h3>MENU</h3>
                 <ul class="nav side-menu">
                   <li><a href="/"><i class="fa fa-home"></i> Beranda </a>
-                    
+
                   </li>
                   <li><a><i class="fa fa-edit"></i> Arsip Digital <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -92,13 +92,13 @@
                   </li>
                 </ul>
               </div>
-              
+
               <div class="menu_section">
                 <h3>PENGATURAN</h3>
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-bug"></i> Kategori File <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/arsip">List Kategori</a></li>
+                      <li><a href="/kategorifile">List Kategori</a></li>
                       <li><a href="#">Tambah Kategori</a></li>
                     </ul>
                   </li>

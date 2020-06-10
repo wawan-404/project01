@@ -21,6 +21,8 @@ Route::get('/arsip', function () {
     return view('arsip');
 });
 
-Route::get('listarsip', function (){
-    return view('listarsip');
-});
+// Route::get('/listarsip', function () {
+//     return view('listarsip');
+// });
+
+Route::get('/kategorifile', 'KategorifileController@index');
