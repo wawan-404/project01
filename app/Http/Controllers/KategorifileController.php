@@ -17,8 +17,6 @@ class KategorifileController extends Controller
     {
         $kategorifile = Pkategori::all();
 
-        // dd('$kategorifile');
-
         return view('kategori.index', ['kategorifile' => $kategorifile]);
     }
 
@@ -29,7 +27,7 @@ class KategorifileController extends Controller
      */
     public function create()
     {
-        return view('tambahkategorifile');
+        return view('kategori.tambah');
     }
 
     /**

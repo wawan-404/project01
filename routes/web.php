@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-
 Route::get('/pkategori', 'KategorifileController@index');
+Route::get('/ptambahkategori', 'KategorifileController@create');
 
 // Route::get('/listarsip', function () {
 //     return view('listarsip');
