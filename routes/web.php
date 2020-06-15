@@ -17,12 +17,13 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/arsip', function () {
-    return view('arsip');
-});
+
+Route::get('/pkategori', 'KategorifileController@index');
 
 // Route::get('/listarsip', function () {
 //     return view('listarsip');
 // });
 
-Route::get('/kategorifile', 'KategorifileController@index');
+// Route::get('/kategorifile', 'KategorifileController@index');
+// Route::get('/tambahkategorifile', 'KategorifileController@create');
+// Route::get('/storekategorifile', 'KategorifileController@store');

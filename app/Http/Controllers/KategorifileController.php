@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Kategorifile;
+use App\Pkategori;
 
 class KategorifileController extends Controller
 {
@@ -15,9 +15,11 @@ class KategorifileController extends Controller
      */
     public function index()
     {
-        $kategorifile = Kategorifile::all();
+        $kategorifile = Pkategori::all();
 
-        return view('kategorifile', ['kategorifile' => $kategorifile]);
+        // dd('$kategorifile');
+
+        return view('kategori.index', ['kategorifile' => $kategorifile]);
     }
 
     /**
@@ -27,7 +29,7 @@ class KategorifileController extends Controller
      */
     public function create()
     {
-        //
+        return view('tambahkategorifile');
     }
 
     /**
@@ -38,7 +40,11 @@ class KategorifileController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $kategorifile = new Kategorifile;
+
+        $kategorifile->name = $request->name;
+
+        $kategorifile->save();
     }
 
     /**
