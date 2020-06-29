@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\KategorifileController;
+use Illuminate\Contracts\Cache\Store;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +19,12 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/pkategori', 'KategorifileController@index');
-Route::get('/ptambahkategori', 'KategorifileController@create');
+Route::get('/pkategori', 'KategorifileController@index')->name('kategori.list');
+Route::get('/ptambahkategori', 'KategorifileController@create')->name('kategori.create');
+Route::post('/ptambahkategori', 'KategorifileController@Store');
+
+
+Route::get('/profil', 'profilController@index')->name('profil');
 
 // Route::get('/listarsip', function () {
 //     return view('listarsip');

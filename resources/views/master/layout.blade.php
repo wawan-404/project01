@@ -70,7 +70,8 @@
                 <h3>MENU</h3>
                 <ul class="nav side-menu">
                   <li><a href="/"><i class="fa fa-home"></i> Beranda </a>
-
+                  </li>
+                  <li><a href="{{route('profil')}}"><i class="fa fa-windows"></i> Profil Dosen </a>
                   </li>
                   <li><a><i class="fa fa-edit"></i> Arsip Digital <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -98,8 +99,8 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-bug"></i> Kategori File <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="/pkategori">List Kategori</a></li>
-                      <li><a href="/tambahkategorifile">Tambah Kategori</a></li>
+                      <li><a href="{{ route('kategori.list')}}">List Kategori</a></li>
+                      <li><a href="{{route('kategori.create')}}">Tambah Kategori</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
