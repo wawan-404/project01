@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Profil;
 
 class profilController extends Controller
 {
@@ -13,7 +14,8 @@ class profilController extends Controller
      */
     public function index()
     {
-        return view('profil.index');
+        $profil = Profil::all();
+        return view('profil.index', compact('profil'));
     }
 
     /**
